@@ -36,7 +36,7 @@ class Dbp {
     }
 
 }
-public class Main {
+public class Dconpool {
     public static void main(String[] args) {
         Scanner in =new Scanner(System.in);
         Logger ou = Logger.getLogger("com.api.jar");

@@ -24,7 +24,7 @@ class  Cc implements Cloneable{
     }
 }
 
-public class Main {
+public class Crdcard {
     public static void main(String[] args) throws CloneNotSupportedException {
         Scanner in =new Scanner(System.in);
         Logger ou = Logger.getLogger("com.api.jar");
