@@ -28,13 +28,13 @@ class BasicShape{
 
 
     float peri ( ){
-        if (shapeName.equals("triangle")) {
+        if (shapeName.equals("Triangle")) {
             return side + side2 + side3;
         }
-        if (shapeName.equals("rectangle")) {
+        if (shapeName.equals("Rectangle")) {
             return 2*(side2+side3);
         }
-        if (shapeName.equals("circle")) {
+        if (shapeName.equals("Circle")) {
             return 2*3.14f*side;
         }
         return 0;
@@ -72,19 +72,21 @@ public class Basicshape {
         String name=in.next();
         ou.info("Enter the Dimensions : ");
 
-        if(name.equals("circle")) {
+        if(name.equals("circlE")) {
             ou.info("Radius :");
             radi=in.nextFloat();
 
 
             BasicShape ob= new BasicShape(name,radi);
             ou.info("The perimetre of circle is :");
-            ou.info(""+ ob.peri());
+            String sadf=""+ ob.peri();
+            ou.info(sadf);
             ou.info("The  Area of Circle  is :");
-            ou.info(""+ ob.area());
+            String dsf=""+ ob.area();
+            ou.info(dsf);
 
         }
-        if(name.equals("triangle")){
+        if(name.equals("trianglE")){
             ou.info("Enter side 1:");
             side=in.nextFloat();
             ou.info("Enter side 2:");
@@ -93,21 +95,25 @@ public class Basicshape {
             side2=in.nextFloat();
             BasicShape ob= new BasicShape(name,side,side1,side2);
             ou.info("The perimetre of Triangle is :");
-            ou.info(""+ob.peri());
+            String neiw=""+ob.peri();
+            ou.info(neiw);
             ou.info("The area of triangle is :");
-            ou.info(""+ ob.area());
+            String neow=""+ ob.area();
+            ou.info(neow);
         }
 
-        if(name.equals("rectangle")){
+        if(name.equals("rectanglE")){
             ou.info(("Enter length :"));
             side1=in.nextFloat();
             ou.info(("Enter  Breath :"));
             side2=in.nextFloat();
             BasicShape ob= new BasicShape(name,side1,side2);
             ou.info("The perimetre of Rectangle is :");
-            ou.info(""+ob.peri());
+            String sews=""+ob.peri();
+            ou.info(sews);
             ou.info("The area of the Rectangle is :");
-            ou.info(""+ ob.area());
+            String sew=""+ ob.area();
+            ou.info(sew);
         }
     }
 

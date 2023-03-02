@@ -87,7 +87,7 @@ public class Bankacc {
             }
             if(a==3)
             {
-                System.out.print("your current Balnce=>");
+                ou.log(Level.INFO,()->"your current Balnce=>");
                 ou.log(Level.INFO,()->""+ob.blncEnquiry());
                 ob.text();
                 ou.log(Level.INFO,()->"Enter your Request Number ");
